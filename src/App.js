@@ -19,52 +19,57 @@ const App = () => {
         <AppProvider>
             <div className='container'>
                 <h1 className='mt-3'>Company's Budget Allocation</h1>
-                    <div className='row mt-3'>
+                <div className='row mt-3'>
                     {
-                                            // Budget component
-                    <div className='col-sm'>
-                    <Budget />
-                </div>
-                        }        
-
-                     {
-                                            //Remaining component
-                    <div className='col-sm'>
-                    <Remaining />
-                </div>
-                        }        
+                        // Budget component
+                        <div className='col-sm'>
+                            <Budget />
+                        </div>
+                    }
 
                     {
-                                            //ExpenseTotal component
-                    <div className='col-sm'>
-                    <ExpenseTotal />
-                </div>
-                        }        
-                       
-                    {
-                           //ExpenseList component
-                    <div className='col-sm'>
-                    <ExpenseList />
-                </div>
-                        }         
+                        //Remaining component
+                        <div className='col-sm'>
+                            <Remaining />
+                        </div>
+                    }
 
                     {
-                            //ExpenseItem component
-                    <div className='col-sm'>
-                    <ExpenseItem />
+                        //ExpenseTotal component
+                        <div className='col-sm'>
+                            <ExpenseTotal />
+                        </div>
+                    }
                 </div>
-                        }        
+                <h2 className='mt-4'>Allocation</h2>
+                <div className='row mt-4'>
+                    {
+                        //ExpenseList component
+                        <div className='col-sm'>
+                            <ExpenseList />
+                        </div>
+                    }
+                </div>
 
-                     {
-                             //AllocationForm component
-                    <div className='col-sm'>
-                    <AllocationForm />
-                </div>
-                        }        
+                <h2 className='mt-5'>Change allocation</h2>
+                <div className='row mt-5'>
 
+                    {
+                        //AllocationForm component
+                        <div className='col-sm'>
+                            <AllocationForm />
+                        </div>
+                    }
+
+                    {/*
+                        //ExpenseItem component
+                        <div className='col-sm'>
+                            <ExpenseItem />
+                        </div>
+                */}
                 </div>
-            </div>
-        </AppProvider>
+            </div >
+        </AppProvider >
     );
 };
 export default App;
